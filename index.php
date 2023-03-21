@@ -21,9 +21,10 @@
             $n = random_int(0, $alphabetLen);
             $pass[] = $alphabet[$n];
         }
+        var_dump(implode($pass));
+        return implode($pass);
     }
-    var_dump(implode($pass));
-
+    
     ?>
 
 
@@ -32,7 +33,7 @@
         <button type="submit">Invia</button>
     </form>
 
-    <h1>La tua password è :<?php $pass ?></h1>
+    <h1>La tua password è :<?php randomPassword($password) ?></h1>
 
 </body>
 </html>
